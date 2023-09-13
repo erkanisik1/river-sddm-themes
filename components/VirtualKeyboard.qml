@@ -16,13 +16,20 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *********************************************************************/
-import QtQuick 2.5
-import QtQuick.VirtualKeyboard 2.1
+import QtQuick 2.12
+import QtQuick.VirtualKeyboard 2.4
 
-InputPanel {
-    id: inputPanel
-    property bool activated: false
-    active: activated && Qt.inputMethod.visible
-    visible: active
+Rectangle {
+    id: virtualKeyboardContainer
     width: parent.width
+    height: virtualKeyboard.height
+    anchors.bottom: parent.bottom
+
+    VirtualKeyboard {
+        id: virtualKeyboard
+        width: parent.width
+        anchors.bottom: parent.bottom
+        focus: true
+    }
 }
+

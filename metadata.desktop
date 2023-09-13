@@ -1,0 +1,14 @@
+[SddmGreeterTheme]
+Name=River
+Description=River Pisi Linux 2.3.4 sddm theme
+Author=Erkan IŞIK
+Copyright=(c) 2023, erkanisik
+License=gpl3.0
+Type=sddm-theme
+Version=1.0
+Website=https://github.com/erkanisik1/river-sddm-themes
+Screenshot=screenshot.jpg
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=River-v1
+
